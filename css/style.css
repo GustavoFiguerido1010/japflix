@@ -57,10 +57,42 @@ main {
     background-color: #f0f0f0;
   }
 
+/* Estilo para las estrellas llenas (amarillas) */
+.fa-star {
+    color: yellow;
+  }
+  
+  /* Estilo para las estrellas vacías (amarillas) */
+  .fa-star-o {
+    color: rgb(255, 255, 255);
+    
+  }
+  
+  /* Contenedor para las estrellas y estilo para las estrellas */
   .star-rating {
-    color: yellow; /* Color amarillo */
+    display: flex;
+    flex-direction: row-reverse; /* Invierte la dirección de los elementos */
+    align-items: center; /* Centra verticalmente las estrellas en el contenedor */
   }
   
   .star-rating .fa-star {
     font-size: 20px; /* Tamaño de fuente de las estrellas */
+    margin-left: 5px; /* Espacio entre las estrellas */
+  }
+
+  .movie-item {
+    background-color: rgba(0, 0, 0, 0.183);
+    color: white;
+  }
+
+
+  .movie-title {
+    cursor: pointer;
+  }
+
+  .full-width-modal {
+    width: 100%;
+    margin: auto;
+    
+    margin-top: -40px; /* Ajusta la cantidad de margen superior según tus necesidades */
   }
